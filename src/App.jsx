@@ -18,13 +18,16 @@ const App = () => {
 
         {/* legendary text */}
 
-        <div className="flex gap-5 z-20 flex-col justify-center items-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-700">
-          <h1 className="font-camar text-9xl">Legendary</h1>
+        <div className="flex gap-5 md:text-9xl sm:text-8xl text-7xl z-20 flex-col justify-center items-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-700">
+          <h1 className="font-camar">Legendary</h1>
           <Skewdiv />
-          <h1 className="font-camar text-9xl">For You</h1>
+          <h1 className="font-camar">For You</h1>
 
           {/* playstore link */}
-          <div className="h-14 gap-7 px-6 overflow-hidden bg-gradient-to-r from-purple-700 to-pink-500 flex justify-center items-center -skew-y-3">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.brusooo.wallarant"
+            className="sm:h-14 h-12  gap-7 sm:px-6 px-4 cursor-pointer overflow-hidden bg-gradient-to-r from-purple-700 to-pink-500 flex justify-center items-center -skew-y-3"
+          >
             {skewNumbers.map((_, idx) => (
               <span
                 key={idx}
@@ -35,7 +38,7 @@ const App = () => {
             <h3 className="absolute font-camar text-white text-3xl">
               Get It Now{" "}
             </h3>
-          </div>
+          </a>
         </div>
       </div>
     </>

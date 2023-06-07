@@ -2,7 +2,7 @@ const Skewdiv = () => {
   const skewNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
   return (
-    <div className="w-[700px] h-28 gap-12 overflow-hidden bg-gradient-to-r from-purple-700 to-pink-500 flex justify-center items-center -skew-y-3">
+    <div className="md:w-[700px] sm:w-[500px] w-[350px] md:h-28 sm:h-20 h-16 gap-12 overflow-hidden bg-gradient-to-r from-purple-700 to-pink-500 flex justify-center items-center -skew-y-3">
       {skewNumbers.map((_, idx) => (
         <span
           key={idx}
@@ -10,7 +10,7 @@ const Skewdiv = () => {
         ></span>
       ))}
 
-      <h1 className="absolute font-camar text-white text-8xl">Collectible</h1>
+      <h1 className="absolute font-camar text-white md:text-8xl sm:text-5xl text-4xl">Collectible</h1>
     </div>
   );
 };
