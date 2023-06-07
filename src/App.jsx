@@ -1,4 +1,3 @@
-import Anima from "./components/Anima";
 import Navbar from "./components/Navbar";
 import Skewdiv from "./components/Skewdiv";
 
@@ -9,9 +8,7 @@ const App = () => {
       <div className="absolute top-0 z-20">
         <Navbar />
       </div>
-      <div className="absolute top-0">
-        <Anima />
-      </div>
+
       <div className="relative w-full h-screen bg-palewhite flex justify-center items-center">
         {/* hanging piece 1 */}
         <div className="absolute top-0 left-24 w-36 h-1/2 bg-pink-50 rounded-b-full"></div>
