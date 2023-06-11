@@ -23,3 +23,7 @@
   src: url("/fonts/Camar.otf");
 }
 
+body::-webkit-scrollbar {
+  display: none; 
+}
+

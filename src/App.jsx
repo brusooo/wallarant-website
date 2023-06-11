@@ -4,18 +4,18 @@ import Skewdiv from "./components/Skewdiv";
 const App = () => {
   const skewNumbers = [1, 2, 3, 4];
   return (
-    <>
+    <div className="max-w-full ml-auto mr-auto pl-6 pr-6">
       <div className="absolute top-0 z-20">
         <Navbar />
       </div>
 
-      <div className="relative w-full h-screen bg-palewhite flex justify-center items-center">
-        {/* hanging piece 1 */}
-        <div className="absolute top-0 left-24 w-36 h-1/2 bg-pink-50 rounded-b-full"></div>
+      {/* hanging piece 1 */}
+      <div className="fixed top-0 sm:left-24 left-12 w-36 h-96 bg-pink-50 rounded-b-full"></div>
 
-        {/* hanging piece 2 */}
-        <div className="absolute top-0 right-36 w-36 h-3/4 bg-pink-50 rounded-b-full"></div>
+      {/* hanging piece 2 */}
+      <div className="fixed top-0 sm:right-36 right-12 w-36 h-80 bg-pink-50 rounded-b-full"></div>
 
+      <div className="flex flex-col min-h-screen justify-center align-center py-32 max-sm:py-48">
         {/* legendary text */}
 
         <div className="flex gap-5 md:text-9xl sm:text-8xl text-7xl z-20 flex-col justify-center items-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-700">
@@ -41,7 +41,7 @@ const App = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
